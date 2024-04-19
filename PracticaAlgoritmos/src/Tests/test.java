@@ -26,8 +26,8 @@ class test {
 	@Test
 	void calcularFactorial() {
 
-		int factorialEsperada = 24;
-		int factorialObtenida = Algoritmos.factorial(4);
+		int factorialEsperada = 120;
+		int factorialObtenida = Algoritmos.factorial(5);
 		assertEquals(factorialEsperada, factorialObtenida);
 
 	}
