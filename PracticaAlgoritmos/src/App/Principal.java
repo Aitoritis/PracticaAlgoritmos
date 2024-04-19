@@ -16,6 +16,7 @@ public class Principal {
 		for (int i = 0; i < numeros.length; i++) {
 
 			numeros[i] = (int) (Math.random() * 10 + 1);
+			System.out.println(numeros[i]);
 
 		}
 
@@ -24,10 +25,12 @@ public class Principal {
 			resultadoFibonacci[i] = Util.Algoritmos.fibonacci(numeros[i]);
 
 		}
+		System.out.println("-------");
 
 		for (int i = 0; i < resultadoFactorial.length; i++) {
 
 			resultadoFactorial[i] = Util.Algoritmos.factorial(numeros[i]);
+			System.out.println(resultadoFactorial[i]);
 
 		}
 

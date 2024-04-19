@@ -34,11 +34,11 @@ public abstract class Algoritmos {
 
 	public static int factorial (int num) {
 		
-        int total = 0;
+        int total = 1;
         
-        for (int i = 0; i < num; i++) {
+        for (int i = 1; i <= num; i++) {
         	
-            total += i * num;
+        	total *= i;
             
         }
         
