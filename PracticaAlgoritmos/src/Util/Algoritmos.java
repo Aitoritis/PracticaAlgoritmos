@@ -28,9 +28,32 @@ public abstract class Algoritmos {
 
 	}
 
-	public static String esPrimo(int numero) {
+	public static boolean esPrimo(int num) {
+		
+		if (num <= 1) {
 
-		return "";
+			return false;
+
+		} else {
+			
+			int prueba;
+			int contador = 0;
+			
+			prueba = (int) Math.sqrt(num);
+			
+			for (int i = 0; prueba > 1; prueba--) {
+
+				if (num % prueba == 0) {
+
+					contador += 1;
+
+				}
+
+			}
+
+			return contador < 1;
+
+		}
 
 	}
 
