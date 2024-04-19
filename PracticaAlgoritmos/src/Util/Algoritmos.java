@@ -16,44 +16,39 @@ public abstract class Algoritmos {
 
 	}
 
-	/**
-	 * 
-	 * @param numero
-	 * @return
-	 */
-
-	public static int factorial(int numero) {
-
-		return 0;
-
-	}
+	public static int factorial (int num) {
+		
+        int total = 0;
+        
+        for (int i = 0; i < num; i++) {
+        	
+            total += i * num;
+            
+        }
+        
+        return total;
+        
+    }
 
 	public static boolean esPrimo(int num) {
-		
+
 		if (num <= 1) {
 
 			return false;
 
-		} else {
-			
-			int prueba;
-			int contador = 0;
-			
-			prueba = (int) Math.sqrt(num);
-			
-			for (int i = 0; prueba > 1; prueba--) {
+		}
 
-				if (num % prueba == 0) {
+		for (int i = 2; i < num; i++) {
 
-					contador += 1;
+			if (num % i == 0) {
 
-				}
+				return false;
 
 			}
 
-			return contador < 1;
-
 		}
+
+		return true;
 
 	}
 
