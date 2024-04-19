@@ -1,6 +1,14 @@
 package Util;
 
 public abstract class Algoritmos {
+	
+	/**
+	 * Suma los dos números anteriores al introducido por parámetro.
+	 * 
+	 * @param El número del que se quiere calcular la sucesión de Fibonacci.
+	 * 
+	 * @return El fibonacci del número pasado por parámetro.
+	 */
 
 	public static int fibonacci(int num1) {
 
@@ -15,6 +23,14 @@ public abstract class Algoritmos {
 		}
 
 	}
+	
+	/**
+	 * Es la multiplicación iterativa de los números anteriores al introducido por parametro.
+	 * 
+	 * @param El número del que se quiere calcular el factorial.
+	 * 
+	 * @return El resultado del número pasado por parámetros.
+	 */
 
 	public static int factorial (int num) {
 		
@@ -29,6 +45,14 @@ public abstract class Algoritmos {
         return total;
         
     }
+	
+	/**
+	 * Una función que recibe un número y te devuelve un true o un false para saber si es primo o no.
+	 * 
+	 * @param Un número del que se quiere saber si es primo o no.
+	 * 
+	 * @return Devuelve un boolean en el que indica si es true o false.
+	 */
 
 	public static boolean esPrimo(int num) {
 
